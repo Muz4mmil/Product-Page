@@ -1,0 +1,117 @@
+/* #20b6d8 light blue */
+/* #2f145b dark purple */
+/* #38427d middle */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(-135deg, #20b6d8,#2f145b);
+    color: white;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo{
+    font-family: monospace;
+    font-size: 32px;
+}
+.tag{
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.socials{
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.shoe{
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shoe img{
+    width: 100%;
+}
+
+.shoe-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.info{
+    position: absolute;
+    bottom: 40px;
+    left: 150px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 32px;
+}
+
+.rating i{
+    font-size: 12px;
+}
+
+.buy{
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+    border: none;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.buy::after{
+    content: "";
+    top: 98%;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: 0.3s;
+}
+.buy:hover{
+    color: black;
+}
+.buy:hover::after{
+    top: 0;
+}

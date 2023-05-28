@@ -27,12 +27,12 @@
 }
 
 .logo{
-    font-family: monospace;
+    /* font-family: monospace; */
     font-size: 32px;
     margin-left: 20px;
     font-weight: bolder;
     letter-spacing: 2px; 
-    text-shadow: 4px 4px black;   
+    text-shadow: 5px 0px black;
 }
 .tag{
     font-family: monospace;
@@ -379,10 +379,9 @@ to {
 }
 
 .line{
-    margin: auto;
+    margin: 2px auto;
     width: 80%;
     font-size: 30px;
-
     text-align: center;
 }
 
@@ -407,4 +406,9 @@ to {
     box-shadow: 0 0 50px 5px #247ee4d5;
     color: white;
     background:linear-gradient(135deg, #20b6d8,#2f145b);
+}
+
+.company-details a{
+    color: white;
+    text-decoration: none;
 }
